@@ -75,5 +75,10 @@ class TextStyles {
     fontWeight:FontWeightHelper.semiBold,
     color: ColorManager.mainBlue
   );
+  static TextStyle font14GrayRegular=  TextStyle(
+    fontSize: 14.sp,
+    fontWeight:FontWeightHelper.regular,
+    color: ColorManager.grey
+  );
   
 }

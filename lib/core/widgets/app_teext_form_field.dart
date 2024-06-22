@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:mydoctor_app/core/theming/colors.dart';
+import '../theming/colors.dart';
 
 import '../theming/styles.dart';
 
@@ -16,6 +16,8 @@ class AppTextFormField extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final Color? backgroundColor;
+  final TextEditingController? controller;
+  final Function(String?) validator;
 
   const AppTextFormField(
       {super.key,
@@ -28,11 +30,14 @@ class AppTextFormField extends StatelessWidget {
       this.isObscureText,
       this.suffixIcon,
       this.prefixIcon,
-      this.backgroundColor});
+      this.backgroundColor,
+      this.controller,
+      required this.validator});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
           isDense: true,
           contentPadding: contentPadding ??
@@ -51,6 +56,20 @@ class AppTextFormField extends StatelessWidget {
                     width: 1.3,
                   ),
                   borderRadius: BorderRadius.circular(16)),
+          errorBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 1.3,
+            ),
+            borderRadius: BorderRadius.circular(16.0),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 1.3,
+            ),
+            borderRadius: BorderRadius.circular(16.0),
+          ),
           helperStyle: hentTextStyle ?? TextStyles.font14lightGreyRegular,
           hintText: hintText,
           suffixIcon: suffixIcon,
@@ -59,6 +78,9 @@ class AppTextFormField extends StatelessWidget {
           fillColor: backgroundColor ?? ColorManager.moreLightGrey),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14DarkBlueMedium,
+      validator: (value) {
+return validator(value);
+      },
     );
   }
 }

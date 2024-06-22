@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mydoctor_app/core/routing/approuter.dart';
-import 'package:mydoctor_app/mydoctor-App.dart';
+import 'core/dp/dependncy_injection.dart';
+import 'core/routing/approuter.dart';
+import 'mydoctor-App.dart';
 
 void main() {
-  runApp( MyDoctorApp(appRouter: AppRouter(),
-   
+  setUpGeIt();
+  runApp(MyDoctorApp(
+    appRouter: AppRouter(),
   ));
 }
+//?Mohamedmm@aaa.com
+//?Mo123456-

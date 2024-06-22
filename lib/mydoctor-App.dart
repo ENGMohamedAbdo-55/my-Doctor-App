@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydoctor_app/core/routing/approuter.dart';
-import 'package:mydoctor_app/core/theming/colors.dart';
+import 'core/routing/approuter.dart';
+import 'core/theming/colors.dart';
 
 import 'core/routing/routs.dart';
 

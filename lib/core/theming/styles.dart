@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydoctor_app/core/theming/font_weight_helper.dart';
+import 'font_weight_helper.dart';
 
 import 'colors.dart';
 
@@ -64,6 +64,16 @@ class TextStyles {
     fontSize: 13.sp,
     fontWeight:FontWeightHelper.medium,
     color: ColorManager.darkBlue
+  );
+  static TextStyle font15DarkBlueMedium=  TextStyle(
+    fontSize: 15.sp,
+    fontWeight:FontWeightHelper.medium,
+    color: ColorManager.darkBlue
+  );
+  static TextStyle font14BlueSemiBold=  TextStyle(
+    fontSize: 14.sp,
+    fontWeight:FontWeightHelper.semiBold,
+    color: ColorManager.mainBlue
   );
   
 }

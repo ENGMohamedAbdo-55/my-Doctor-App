@@ -28,13 +28,14 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  flutter_bloc: ^8.0.1
   build_runner: 2.4.9
   cupertino_icons: ^1.0.6
   dio: ^5.4.3+1
   easy_localization: ^3.0.6
+  firebase_core: ^3.1.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.0.1
   flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.10+1

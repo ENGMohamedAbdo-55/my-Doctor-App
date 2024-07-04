@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mydoctor_app/core/theming/colors.dart';
+import '../../../../core/theming/colors.dart';
 
 import '../../../../core/theming/styles.dart';
 

@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mydoctor_app/core/helpers/spacing.dart';
+import 'package:mydoctor_app/features/home/data/models/specialization_response_model.dart';
 
 import '../../../../core/theming/colors.dart';
 import '../../../../core/theming/styles.dart';
+import 'doctor_speciality_list_view_item.dart';
 
 class DoctorsSpecialityListView extends StatelessWidget {
-  const DoctorsSpecialityListView({super.key});
+  final List<SpecializationsData?> specializationDataList ; 
+  const DoctorsSpecialityListView({super.key, required this.specializationDataList});
 
   @override
   Widget build(BuildContext context) {
@@ -15,24 +18,11 @@ class DoctorsSpecialityListView extends StatelessWidget {
         height: 100.h,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: 10,
+          itemCount: specializationDataList.length,
           itemBuilder: (context, index) {
-            return Padding(
-              padding: EdgeInsetsDirectional.only(start: index == 0 ? 0 : 24.w),
-              child: Column(children: [
-                CircleAvatar(
-                  radius: 28.r,
-                  backgroundColor: ColorManager.lightBlue,
-                  child: Image.asset(
-                    "assets/images/brain.png",
-                    height: 40.h,
-                    width: 40.h,
-                  ),
-                ),
-                verticalSpace(6),
-                Text("Brain", style: TextStyles.font12DarkBlueRegular),
-              ]),
-            );
+            return DoctorsSpecialityListViwItem(
+              specializationData: specializationDataList[index],
+              itemIndex: index,);
           },
         ));
   }

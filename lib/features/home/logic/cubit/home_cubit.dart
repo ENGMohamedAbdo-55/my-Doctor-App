@@ -7,7 +7,7 @@ import 'home_state.dart';
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit(this._homeRepo) : super(const HomeState.initial());
   final HomeRepo _homeRepo;
-  void specializationLoading() async {
+  void getSpecialization() async {
     emit(const HomeState.specializationLoading());
     final response = await _homeRepo.getSpecialization();
     response.when(

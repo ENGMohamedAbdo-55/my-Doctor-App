@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mydoctor_app/core/helpers/spacing.dart';
-import 'package:mydoctor_app/features/home/logic/cubit/home_cubit.dart';
-import 'package:mydoctor_app/features/home/ui/widgets/specialization_and_doctors_bloc_builder.dart';
+import '../../../../core/helpers/spacing.dart';
+import '../../logic/cubit/home_cubit.dart';
+import '../widgets/specialization_and_doctors_bloc_builder.dart';
 
 import '../../logic/cubit/home_state.dart';
 import '../widgets/doctor_speciality_list_view.dart';

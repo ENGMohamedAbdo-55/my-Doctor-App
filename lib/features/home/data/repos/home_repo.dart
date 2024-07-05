@@ -1,6 +1,6 @@
-import 'package:mydoctor_app/core/ntworking/api_error_handler.dart';
-import 'package:mydoctor_app/core/ntworking/api_result.dart';
-import 'package:mydoctor_app/features/home/data/apis/home_api_service.dart';
+import '../../../../core/ntworking/api_error_handler.dart';
+import '../../../../core/ntworking/api_result.dart';
+import '../apis/home_api_service.dart';
 
 import '../models/specialization_response_model.dart';
 

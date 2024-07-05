@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mydoctor_app/core/helpers/spacing.dart';
-import 'package:mydoctor_app/features/home/data/models/specialization_response_model.dart';
+import '../../../../core/helpers/spacing.dart';
+import '../../data/models/specialization_response_model.dart';
 
 import '../../../../core/theming/colors.dart';
 import '../../../../core/theming/styles.dart';

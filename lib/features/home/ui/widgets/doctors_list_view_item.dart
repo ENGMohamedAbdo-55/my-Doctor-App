@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydoctor_app/features/home/data/models/specialization_response_model.dart';
+import '../../data/models/specialization_response_model.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../../../core/helpers/spacing.dart';

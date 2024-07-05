@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mydoctor_app/features/home/logic/cubit/home_cubit.dart';
+import '../../features/home/logic/cubit/home_cubit.dart';
 
 import '../../features/home/ui/screens/home_screen.dart';
 import '../../features/login/logic/cubit/login_cubit.dart';

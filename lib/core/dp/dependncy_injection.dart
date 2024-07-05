@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:mydoctor_app/features/home/data/apis/home_api_service.dart';
+import '../../features/home/data/apis/home_api_service.dart';
 import '../../features/home/data/repos/home_repo.dart';
 import '../../features/home/logic/cubit/home_cubit.dart';
 import '../../features/signup/data/repos/sign_up_repo.dart';

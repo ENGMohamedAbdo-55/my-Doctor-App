@@ -1,7 +1,7 @@
 
 import 'package:dio/dio.dart';
-import 'package:mydoctor_app/core/ntworking/api_constants.dart';
-import 'package:mydoctor_app/features/home/data/apis/home_api_constance.dart';
+import '../../../../core/ntworking/api_constants.dart';
+import 'home_api_constance.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../models/specialization_response_model.dart';

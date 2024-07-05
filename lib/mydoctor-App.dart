@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'main_development.dart';
 
+import 'core/helpers/constants.dart';
 import 'core/routing/approuter.dart';
 import 'core/routing/routs.dart';
 import 'core/theming/colors.dart';
@@ -18,7 +20,7 @@ class MyDoctorApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        initialRoute: Routs.onBoardingScreen,
+        initialRoute: isLoggedInUser ? Routs.homeScreen: Routs.loginScreen,
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouter.generateRoute, 
         title: "MyDoctor",

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:mydoctor_app/core/ntworking/api_error_handler.dart';
+import '../../../../core/ntworking/api_error_handler.dart';
 
 import '../../data/models/specialization_response_model.dart';
 

@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/helpers/spacing.dart';
-import '../../data/models/specialization_response_model.dart';
 
-import '../../../../core/theming/colors.dart';
-import '../../../../core/theming/styles.dart';
+import '../../data/models/specialization_response_model.dart';
 import 'doctor_speciality_list_view_item.dart';
 
 class DoctorsSpecialityListView extends StatelessWidget {

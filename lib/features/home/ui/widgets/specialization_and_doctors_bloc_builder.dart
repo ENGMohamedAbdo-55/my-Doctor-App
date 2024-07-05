@@ -22,9 +22,9 @@ class SpecializationAndDoctorsBlocBuilder extends StatelessWidget {
             specializationLoading: () {
               return setUpLoading();
             },
-            specializationSuccess: (specializationsResponseModel) {
+            specializationSuccess: (specializationDataList) {
               var specializationList =
-                  specializationsResponseModel.specializationDataList;
+                specializationDataList;
               return SetUpSuccess(specializationList);
             },
             specializationError: (errorHandler) => setUpError(),

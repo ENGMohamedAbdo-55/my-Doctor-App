@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mydoctor_app/core/helpers/extensions.dart';
-import 'package:mydoctor_app/core/ntworking/api_error_handler.dart';
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/ntworking/api_error_handler.dart';
 
 import '../../data/models/specialization_response_model.dart';
 import '../../data/repos/home_repo.dart';

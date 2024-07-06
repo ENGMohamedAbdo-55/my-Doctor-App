@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 
-import '../../logic/cubit/home_cubit.dart';
-import '../../logic/cubit/home_state.dart';
+import '../../../logic/cubit/home_cubit.dart';
+import '../../../logic/cubit/home_state.dart';
 import 'doctors_list_view.dart';
 
 class DoctorsBlocBuilder extends StatelessWidget {
@@ -18,7 +18,7 @@ class DoctorsBlocBuilder extends StatelessWidget {
         return state.maybeWhen(
           doctorsSuccess: (doctorsList) {
             return setupSuccess(doctorsList);
-          },
+          }, 
           doctorsError: (errorHandler) => setupError(),
           orElse: () {
             return const SizedBox.shrink();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydoctor_app/core/theming/styles.dart';
 
+import '../../../../core/theming/styles.dart';
 import '../widgets/doc_logo_and_name.dart';
 import '../widgets/doctor_img_and_text.dart';
 import '../widgets/get_startd_btn.dart';

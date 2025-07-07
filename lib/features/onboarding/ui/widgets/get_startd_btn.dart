@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydoctor_app/core/helpers/extensions.dart';
-import 'package:mydoctor_app/core/routing/routs.dart';
-import 'package:mydoctor_app/core/theming/colors.dart';
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/routing/routs.dart';
+import '../../../../core/theming/colors.dart';
 
 import '../../../../core/theming/styles.dart';
 
